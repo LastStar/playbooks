@@ -1,0 +1,9 @@
+---
+  - name: install libxml library
+    apt: name=libxml2-dev state=latest
+
+  - name: install libxslt library
+    apt: name=libxslt1-dev state=latest
+
+  - name: install bundler
+    apt: name=ruby-bundler state=latest

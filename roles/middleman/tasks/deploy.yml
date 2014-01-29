@@ -1,0 +1,13 @@
+---
+  - name: pull repos
+    git: dest=/var/www/{{ item.name }} repo={{ item.repo }}
+    with_items: sites
+
+  - name: bundle gems
+    shell: bundle install chdir=/var/www/{{ item.name }}
+    with_items: sites
+
+  - name: build middleman
+    shell: bundle exec middleman build chdir=/var/www/{{ item.name }}
+    with_items: sites
+    notify: restart nginx

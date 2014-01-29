@@ -1,3 +1,4 @@
 ---
   - name: restart nginx
-    action: service name=nginx pattern=/etc/init.d/nginx state=restarted
+    action: service name=nginx state=restarted
+    sudo: True

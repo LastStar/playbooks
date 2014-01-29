@@ -1,7 +1,7 @@
 ---
 - name: Setup static sites
   hosts: static
-  user: root
+  user: vagrant
 
   roles:
     - common

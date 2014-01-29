@@ -1,18 +1,21 @@
 ---
 listen: "*:80"
-vhosts:
+user: www-data
+sites:
   - name: laststar.eu
     aliases:
       - www.laststar.eu
-    repo: git@github.com:LastStar/wrabec
+    repo: git@github.com:LastStar/laststar.eu.git
   - name: wrabec.cz
     aliases:
       - wrabec.eu
       - www.wrabec.cz
       - www.wrabec.eu
-    repo: git@github.com:LastStar/wrabec
+    repo: git@github.com:LastStar/wrabec.git
   - name: ralprojekt.cz
     aliases:
       - www.ralprojekt.cz
-    repo: git@github.com:LastStar/wrabec
+    repo: git@github.com:LastStar/ralprojekt.cz.git
+
+
 

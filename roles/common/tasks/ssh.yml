@@ -1,0 +1,8 @@
+---
+  - name: copy private ssh key for github
+    copy: src=keys/id_rsa dest=~/.ssh/id_rsa mode=0600
+    tags: ssh
+
+  - name: copy github finger
+    copy: src=keys/known_hosts dest=~/.ssh/known_hosts mode=0600
+    tags: ssh
