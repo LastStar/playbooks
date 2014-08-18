@@ -1,9 +1,15 @@
 ---
 vhosts:
   - name: laststar.eu
-    repo: git@github.com:LastStar/wrabec
+    repo: git@github.com:LastStar/laststar.eu
   - name: wrabec.cz
     repo: git@github.com:LastStar/wrabec
   - name: ralprojekt.cz
-    repo: git@github.com:LastStar/wrabec
+    repo: git@github.com:LastStar/ralprojekt.cz
+  - name: vmerunka.cz
+    repo: git@github.com:LastStar/vmerunka.cz
+  - name: dropouts.cz
+    repo: git@github.com:LastStar/dropouts.cz
+  - name: libenec.cz
+    repo: git@github.com:pepe/libenec.cz
 

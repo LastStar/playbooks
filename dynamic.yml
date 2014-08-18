@@ -1,0 +1,13 @@
+---
+- name: Setup dynamic sites
+  hosts: dynamic
+  user: root
+
+  roles:
+    - common
+    - deploy-user
+    - ssh
+    - abtris.nginx-passenger
+    - joshualund.ruby-common
+    - lesmyrmidons.mongodb
+    - forge
